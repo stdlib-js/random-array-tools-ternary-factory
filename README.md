@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@deno/mod.js';
+import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@v0.2.1-deno/mod.js';
 ```
 
 #### ternaryFactory( prng, dtypes, dtype )
@@ -506,7 +506,7 @@ var sz = random.byteLength;
 ```javascript
 import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@deno/mod.js';
+import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@v0.2.1-deno/mod.js';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
