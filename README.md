@@ -35,19 +35,32 @@ limitations under the License.
 
 > Create a factory function for generating pseudorandom values drawn from a ternary PRNG.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-array-tools-ternary-factory
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-tools-ternary-factory/tags). For example,
-
-```javascript
-import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@v0.2.2-deno/mod.js';
+var ternaryFactory = require( '@stdlib/random-array-tools-ternary-factory' );
 ```
 
 #### ternaryFactory( prng, dtypes, dtype )
@@ -55,7 +68,7 @@ import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-t
 Returns a factory function for generating pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -76,7 +89,7 @@ The function has the following parameters:
 Returns a function for generating pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -113,7 +126,7 @@ If provided PRNG parameters, the function returns a partially applied function f
 Returns an array of pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -140,7 +153,7 @@ The function accepts the following options:
 -   **dtype**: output array data type. Setting this option overrides the default output array data type.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -161,8 +174,8 @@ var v = random( 10, 2.0, 5.0, 3.33, {
 Fills an array with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
+var zeros = require( '@stdlib/array-zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -196,7 +209,7 @@ The method has the following parameters:
 Returns an array of pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -223,7 +236,7 @@ The function accepts the following options:
 -   **dtype**: output array data type. Setting this option overrides the default output array data type.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -249,8 +262,8 @@ v = random( 10, {
 Fills an array with pseudorandom values drawn from a ternary PRNG.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
+var zeros = require( '@stdlib/array-zeros' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -281,7 +294,7 @@ The method has the following parameters:
 The underlying pseudorandom number generator.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -300,7 +313,7 @@ var prng = random.PRNG;
 The value used to seed the underlying pseudorandom number generator.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -317,8 +330,8 @@ var seed = random.seed;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -339,7 +352,7 @@ var seed = random.seed;
 Length of underlying pseudorandom number generator seed.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -356,8 +369,8 @@ var len = random.seedLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -378,7 +391,7 @@ var len = random.seedLength;
 Writable property for getting and setting the underlying pseudorandom number generator state.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -395,8 +408,8 @@ var state = random.state;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -417,7 +430,7 @@ var state = random.state;
 Length of underlying pseudorandom number generator state.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -434,8 +447,8 @@ var len = random.stateLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -456,7 +469,7 @@ var len = random.stateLength;
 Size (in bytes) of underlying pseudorandom number generator state.
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -473,8 +486,8 @@ var sz = random.byteLength;
 If the `factory` function is provided a PRNG for uniformly distributed numbers, the associated property value on the returned function is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var triangular = require( '@stdlib/random-base-triangular' );
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
 
@@ -509,9 +522,9 @@ var sz = random.byteLength;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@deno/mod.js';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@deno/mod.js';
+var triangular = require( '@stdlib/random-base-triangular' );
+var dtypes = require( '@stdlib/array-dtypes' );
+var ternaryFactory = require( '@stdlib/random-array-tools-ternary-factory' );
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
@@ -556,7 +569,7 @@ x = random( 10, 2.0, 5.0, 3.33, {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -586,8 +599,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-array-tools-ternary-factory.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-array-tools-ternary-factory
 
-[test-image]: https://github.com/stdlib-js/random-array-tools-ternary-factory/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/random-array-tools-ternary-factory/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/random-array-tools-ternary-factory/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/random-array-tools-ternary-factory/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-array-tools-ternary-factory/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-array-tools-ternary-factory?branch=main
