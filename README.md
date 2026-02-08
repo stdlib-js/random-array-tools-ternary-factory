@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-tools-ternary-factory/tags). For example,
+
+```javascript
 import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@v0.2.3-esm/index.mjs';
 ```
 
@@ -511,7 +516,7 @@ var sz = random.byteLength;
 
 import triangular from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-triangular@esm/index.mjs';
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@v0.2.3-esm/index.mjs';
+import ternaryFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-tools-ternary-factory@esm/index.mjs';
 
 var dt = dtypes( 'real_floating_point_and_generic' );
 
