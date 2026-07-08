@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-23)
+## Unreleased (2026-07-08)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`a9ded39`](https://github.com/stdlib-js/stdlib/commit/a9ded39203d2cbc9ff79b0cc96f0fbd2a962b36f) - **chore:** clean-up [(#12446)](https://github.com/stdlib-js/stdlib/pull/12446) _(by Philipp Burckhardt, Athan Reines)_
 -   [`f3146ac`](https://github.com/stdlib-js/stdlib/commit/f3146ac8176e5449bd3cdadad3af9570122587d2) - **bench:** refactor to use string interpolation in `@stdlib/random-array` [(#11417)](https://github.com/stdlib-js/stdlib/pull/11417) _(by Karan Anand)_
 
 </details>
@@ -24,9 +25,11 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Karan Anand
+-   Philipp Burckhardt
 
 </section>
 
